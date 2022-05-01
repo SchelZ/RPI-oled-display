@@ -19,8 +19,7 @@ font = ImageFont.load_default()
 
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 IP = subprocess.check_output("who | cut -d'(' -f2 |cut -d')' -f1 | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'", shell=True).decode("utf-8")
-IPs_list = IP.split("\n")[:-1]
-for i in IPs_list:
+for i in IP.split("\n")[:-1]:
         draw.text((x, index), f"{i}", font=font, fill=255)
         index += 12
 disp.image(image)
