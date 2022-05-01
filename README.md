@@ -5,10 +5,14 @@ This was done on Adafruit 0.96" I2C oled display
 ```
 
 ## Installation
-- pip install Pillow
+- sudo pip install adafruit-circuitpython-ssd1306
 
 ## Or
-- pip3 install Pillow
+- sudo pip3 install adafruit-circuitpython-ssd1306
+
+## AND
+- sudo apt-get install python3-pil
+
 
 ## Setup 
 1. Type this command "sudo raspi-config" and enable under "Interface Options" --> I2C or SPI.
